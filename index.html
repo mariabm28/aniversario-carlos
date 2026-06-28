@@ -2,105 +2,196 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>Para Carlos ❤️</title>
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<title>5 años contigo ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet">
 
-<link rel="stylesheet"
-href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <section class="hero">
 
-<img src="fotos/portada.jpg">
+    <img src="fotos/portada.jpg" alt="Portada">
 
-<div>
+    <div class="hero-text">
 
-<h1>Carlos ❤️</h1>
+        <h1>Carlos ❤️</h1>
 
-<p>
-Cinco años.
-Y sigo eligiéndote.
+        <p>
+            Cinco años después,
+            sigo eligiéndote cada día.
+        </p>
+
+        <button onclick="entrar()">
+            Entrar
+        </button>
+
+    </div>
+
+</section>
+
+
+<main id="contenido">
+
+    <section class="historia">
+
+        <h2>Nuestra historia ✨</h2>
+
+        <p class="frase">
+            Gracias por convertir los días normales en recuerdos inolvidables.
+        </p>
+
+        <div id="contador"></div>
+
+    </section>
+
+    
+    <section class="galeria">
+
+        <img src="fotos/foto1.jpg">
+        <img src="fotos/foto2.jpg">
+        <img src="fotos/foto3.jpg">
+        <img src="fotos/foto4.jpg">
+
+    </section>
+
+
+    <section class="carta">
+
+        <h2>Una carta para ti ❤️</h2>
+
+        <button onclick="mostrarCarta()">
+            Abrir carta
+        </button>
+
+        <div id="cartaCompleta">
+
+            <p>
+                Cinco años parecen solo un número,
+                pero cuando pienso en todo lo que hemos vivido,
+                siento que caben miles de recuerdos en ellos.
+
+                Gracias por acompañarme en cada momento,
+                por las risas, los abrazos,
+                por no soltarme la mano, por estar en lo bueno y en lo malo,
+                por hacer de los días sencillos
+                algo extraordinario, por apoyarme siempre, 
+                porque mis días malos son menos malos si tu estas conmigo.
+
+                No sé qué nos traerá el futuro,
+                pero sí sé una cosa:
+                volvería a elegirte una y otra vez.
+
+                Feliz aniversario Gordi, TE AMO ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <p class="frase">
+        Y esto es solo el principio de todo lo que nos queda por vivir.
+    </p>
+
+
+    <section class="galeria">
+
+        <img src="fotos/foto5.jpg">
+        <img src="fotos/foto6.jpg">
+        <img src="fotos/foto7.jpg">
+        <img src="fotos/foto8.jpg">
+
+    </section>
+
+    <section class="galeria">
+
+    <img src="fotos/foto9.jpg">
+    <img src="fotos/foto10.jpg">
+    <img src="fotos/foto11.jpg">
+    <img src="fotos/foto12.jpg">
+
+</section>
+
+<p class="frase">
+    Cada recuerdo contigo se ha convertido en uno de mis lugares favoritos.
 </p>
 
-<button onclick="entrar()">
-Entrar
-</button>
+<section class="galeria">
 
-</div>
+    <img src="fotos/foto13.jpg">
+    <img src="fotos/foto14.jpg">
+    <img src="fotos/foto15.jpg">
+    <img src="fotos/foto16.jpg">
+
+</section>
+
+<section class="galeria">
+
+    <img src="fotos/foto17.jpg">
+    <img src="fotos/foto18.jpg">
+    <img src="fotos/foto19.jpg">
+    <img src="fotos/foto20.jpg">
+    <img src="fotos/foto21.jpg">
+    <img src="fotos/foto22.jpg">
+    <img src="fotos/foto23.jpg">
+    <img src="fotos/foto24.jpg">
 
 </section>
 
 
-<section id="contenido">
+    <section class="musica-section">
 
-<h2>Nuestra historia</h2>
+        <button id="musica">
+            ♡ Reproducir canción ♡
+        </button>
 
-<p>
-Cinco años llenos de recuerdos.
-</p>
+        <audio id="audio" loop>
+            <source src="musica.mp3">
+        </audio>
 
-<div class="galeria">
-
-<img src="fotos/foto1.jpg">
-
-<img src="fotos/foto2.jpg">
-
-<img src="fotos/foto3.jpg">
-
-<img src="fotos/foto4.jpg">
-
-<img src="fotos/foto5.jpg">
-
-</div>
+    </section>
 
 
-<div class="carta">
+    <section id="final">
 
-<h2>Para Carlos</h2>
+        <h1>
+            Gracias por estos años ❤️
+        </h1>
 
-<p>
+        <p>
+            Y por todos los recuerdos que aún nos quedan por crear.
+        </p>
 
-Cinco años parecen poco escritos
-pero inmensos cuando pienso
-todo lo que hemos vivido.
-
-Gracias por acompañarme.
-
-Volvería a elegirte.
-
-Feliz aniversario ❤️
-
-</p>
-
-</div>
-
-<button id="musica">
-♪ Nuestra canción
+        <button onclick="mostrarSorpresa()">
+    Tengo algo más para ti ❤️
 </button>
 
-<audio
-id="audio"
-loop>
+<p id="sorpresaFinal">
+    Lo mejor de mi vida ha sido construir estos años contigo.
+    Eres mi persona favorita, mi mejor amigo, mi compañero de vida.
+</p>
 
-<source
-src="musica.mp3">
+    </section>
 
-</audio>
+</main>
 
-</section>
+<script src="script.js"></script>
 
-<script
-src="script.js">
+<div id="corazones"></div>
 
-</script>
+<div id="visor" onclick="cerrarVisor()">
+    <img id="imagenGrande">
+</div>
 
 </body>
 

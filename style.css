@@ -303,3 +303,19 @@ button:hover {
 
     animation: aparecer 1s;
 }
+
+@media (max-width: 768px) {
+
+    .galeria {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .galeria img {
+
+        height: 180px;
+    }
+
+}
